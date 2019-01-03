@@ -24,7 +24,7 @@ def gen_randint(number=1,minim=1,maxum=10,rep=True,return_dummy=False):
     
     #Check that number, minim, and maxum are integers:
     chk_list = [number,minim,maxum]
-    compare2str = ['number','minim','maxim'] ### For referring back to in feedback
+    compare2str = ['number','minim','maxum'] ### For referring back to in feedback
     chk_type = [type(item) for item in chk_list]
     if all(item == int for item in chk_type) == False:
         bool_chk = [item != int for item in chk_type]
